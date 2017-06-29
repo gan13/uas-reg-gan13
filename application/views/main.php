@@ -1,28 +1,22 @@
 <!DOCTYPE html>
-<html ng-app="FLYERBD">
+<html ng-app="FRAMEWORK">
 <head>
-	<title>GANDEN TUGAS</title>
+	<title>Framework</title>
 </head>
 <body>
-	<h1>Selamat dan sukses atas selesainya tugas ini</h1>
-	[<a href="#/" title="Home">Home</a>]
-	[<a href="#/about" title="About">About</a>]
-	[<a href="#/contact" title="Contact">Contact</a>]
-	[<a href="#/tugas" title="Tugas">Tugas</a>]
+<h1> Selamat datang Bossku !!</h1>
+[<a href="#/" title="Home">Home</a>]
+[<a href="#/about" title="about">About</a>]
+[<a href="#/conctact" title="Contact">Contact</a>]
+	<div ng-view>
+		
+	</div>
 
-<div ng-view>
+<script src="<?php echo base_url() ?>bower_components/angular/angular.js"></script>
+<script src="<?php echo base_url() ?>bower_components/angular-route/angular-route.js"></script>
 
-</div>
 
-
-<script src="<?php echo base_url()?>bower_components/angular/angular.js"></script>
-<script src="<?php echo base_url()?>bower_components/angular-route/angular-route.js"></script>
-
-<script src="<?php echo base_url()?>assets/js/app.js"></script>
-
-<script src="<?php echo base_url()?>assets/js/controllers/AboutCtrl.js"></script>
-<script src="<?php echo base_url()?>assets/js/controllers/HomeCtrl.js"></script>
-<script src="<?php echo base_url()?>assets/js/controllers/ContactCtrl.js"></script>
-<script src="<?php echo base_url()?>assets/js/controllers/TugasCtrl.js"></script>
+<script src="<?php echo base_url() ?>ang/app.js"></script>
+<script src="<?php echo base_url() ?>ang/controller/HomeCtrl.js"></script>
 </body>
 </html>
